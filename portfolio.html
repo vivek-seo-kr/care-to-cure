@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care To Cure Health Care Clinics | Physiotherapy in Shimla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            primary: '#1a4d4d',
+                            secondary: '#f5f2ed',
+                            accent: '#d4a373',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f5f2ed;
+            color: #0f172a;
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            opacity: 0;
+        }
+        .faq-item.active .faq-content {
+            max-height: 200px;
+            opacity: 1;
+            padding-bottom: 1.5rem;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="font-sans selection:bg-brand-accent/30">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-brand-secondary/80 backdrop-blur-md border-b border-brand-primary/10">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center text-white">
+                    <i data-lucide="heart-pulse"></i>
+                </div>
+                <span class="font-serif text-xl font-bold text-brand-primary hidden sm:block">Care To Cure</span>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <a href="#about" class="text-sm font-medium hover:text-brand-accent transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium hover:text-brand-accent transition-colors">Services</a>
+                <a href="#faqs" class="text-sm font-medium hover:text-brand-accent transition-colors">FAQs</a>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-brand-primary text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-brand-primary/90 transition-all shadow-lg shadow-brand-primary/20">
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/10 text-brand-accent text-xs font-bold uppercase tracking-wider mb-6">
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                    <span>4.6 Rating • 161+ Reviews</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif text-brand-primary leading-[1.1] mb-6">
+                    International Standards <br />
+                    <span class="italic text-brand-accent">Physiotherapy</span> in Shimla
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    Providing expert care since 2013. Led by Dr. Vipul Sood, we've built trust with over 5,000 families through compassionate and evidence-based treatment.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-brand-primary text-white px-8 py-4 rounded-full font-medium hover:scale-105 transition-transform flex items-center gap-2">
+                        Start Your Recovery <i data-lucide="chevron-right"></i>
+                    </button>
+                    <a href="tel:09882411110" class="px-8 py-4 rounded-full border border-brand-primary/20 font-medium hover:bg-brand-primary/5 transition-colors flex items-center gap-2">
+                        <i data-lucide="phone" class="w-4.5 h-4.5"></i> 098824 11110
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweo64U0ViLRRP7oW07Vwo4eQKzGON3B_85obDXZIDJREieXdtEP4603rNa925hPhP_vWOF0PiYOhD8-0sLgeHHporKG9u0hiC7CvHUOXub4dSXKc0rzsOiG4NE0pjaC7D3B5HCvubzU4jcVo=s1360-w1360-h1020-rw" alt="Care To Cure Clinic Interior" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-brand-secondary max-w-[240px]">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="w-12 h-12 bg-brand-accent/20 rounded-full flex items-center justify-center text-brand-accent">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-primary">5000+</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wide">Families Served</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-brand-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-serif mb-1">10+</div>
+                <div class="text-sm opacity-70 uppercase tracking-widest">Years Experience</div>
+            </div>
+            <div>
+                <div class="text-4xl font-serif mb-1">4.6</div>
+                <div class="text-sm opacity-70 uppercase tracking-widest">Google Rating</div>
+            </div>
+            <div>
+                <div class="text-4xl font-serif mb-1">160+</div>
+                <div class="text-sm opacity-70 uppercase tracking-widest">Patient Reviews</div>
+            </div>
+            <div>
+                <div class="text-4xl font-serif mb-1">Shimla</div>
+                <div class="text-sm opacity-70 uppercase tracking-widest">Primary Service Area</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif text-brand-primary mb-4">Our Expertise</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">
+                    We provide a range of specialized treatments to help you regain mobility and live a pain-free life.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-3xl bg-brand-secondary border border-brand-primary/5 hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-primary mb-3">Manual Therapy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Specialized hands-on techniques to diagnose and treat soft tissues and joint structures.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-brand-secondary border border-brand-primary/5 hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6">
+                        <i data-lucide="heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-primary mb-3">Dry Needling</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Modern treatment designed to ease muscular pain and improve range of motion.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-brand-secondary border border-brand-primary/5 hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-primary mb-3">Sports Rehabilitation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Tailored recovery programs for athletes to return to peak performance safely.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-brand-secondary border border-brand-primary/5 hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6">
+                        <i data-lucide="user-round"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-primary mb-3">Geriatric Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Compassionate physiotherapy focused on mobility and independence for seniors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="aspect-square rounded-3xl overflow-hidden border-8 border-white shadow-2xl relative z-10">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMSSqDAxxLGdJPlA7Rta4tgTQMIQtAkC4ZTqB0b=s1360-w1360-h1020-rw" alt="Dr. Vipul Sood" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -top-4 -right-4 w-48 h-48 bg-brand-accent/20 rounded-full blur-3xl -z-0"></div>
+                <div class="absolute -bottom-4 -left-4 w-64 h-64 bg-brand-primary/10 rounded-full blur-3xl -z-0"></div>
+            </div>
+            
+            <div>
+                <h2 class="text-4xl md:text-5xl font-serif text-brand-primary mb-8">Meet Dr. Vipul Sood</h2>
+                <div class="space-y-6 text-slate-600 leading-relaxed">
+                    <p>Care to Cure Physiotherapy has been a cornerstone of health in Shimla since 2013. As a stand-alone clinic, we pride ourselves on delivering international standards of physiotherapy treatment right here in our town.</p>
+                    <p>Dr. Vipul Sood is recognized for his gentle, experienced, and passionate approach to patient care. His expertise in manual therapy and dry needling has helped thousands overcome chronic pain and acute injuries.</p>
+                    <div class="pt-4 grid grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-brand-accent"><i data-lucide="chevron-right"></i></div>
+                            <div>
+                                <div class="font-bold text-brand-primary">Manual Therapy</div>
+                                <div class="text-xs">Advanced Techniques</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-brand-accent"><i data-lucide="chevron-right"></i></div>
+                            <div>
+                                <div class="font-bold text-brand-primary">Dry Needling</div>
+                                <div class="text-xs">Certified Specialist</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-24 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif text-brand-primary mb-4">Frequently Asked Questions</h2>
+                <p class="text-slate-500">Find answers to common questions about our clinic and services.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="faq-item border border-brand-primary/10 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-brand-secondary transition-colors">
+                        <span class="font-bold text-brand-primary">What are your clinic timings?</span>
+                        <i data-lucide="chevron-down" class="faq-icon text-brand-accent transition-transform"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-8 text-slate-600 text-sm leading-relaxed">
+                            We are open Monday through Saturday from 9:30 AM to 6:30 PM. The clinic is closed on Sundays.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item border border-brand-primary/10 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-brand-secondary transition-colors">
+                        <span class="font-bold text-brand-primary">Where exactly is the clinic located in Shimla?</span>
+                        <i data-lucide="chevron-down" class="faq-icon text-brand-accent transition-transform"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-8 text-slate-600 text-sm leading-relaxed">
+                            We are located at 1st Evergreen House, near Hotel Ashiana Clarks Inn on the New Road, Circular Rd, Chotta Shimla, Shimla, Himachal Pradesh 171002.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item border border-brand-primary/10 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-brand-secondary transition-colors">
+                        <span class="font-bold text-brand-primary">What specialized treatments do you offer?</span>
+                        <i data-lucide="chevron-down" class="faq-icon text-brand-accent transition-transform"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-8 text-slate-600 text-sm leading-relaxed">
+                            We offer International Standard treatments including Manual Therapy, Dry Needling, Sports Rehabilitation, and Geriatric Care tailored to individual needs.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item border border-brand-primary/10 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-brand-secondary transition-colors">
+                        <span class="font-bold text-brand-primary">How can I book an appointment?</span>
+                        <i data-lucide="chevron-down" class="faq-icon text-brand-accent transition-transform"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="px-8 text-slate-600 text-sm leading-relaxed">
+                            You can call us directly at 098824 11110 to schedule your consultation or session.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-4 bg-brand-primary text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-serif mb-4">Patient Stories</h2>
+                    <p class="opacity-70 max-w-xl">Hear from some of the 5,000+ families who have trusted us with their recovery journey.</p>
+                </div>
+                <div class="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-full">
+                    <div class="flex text-brand-accent">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <span class="font-bold">4.6 / 5.0</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex text-brand-accent mb-6">
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                        </div>
+                        <p class="italic text-lg mb-8 leading-relaxed">"Dr. Vipul Sood is gentle, well experienced and an excellent physiotherapist. He treats his patients calmly and passionately."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent font-bold">S</div>
+                        <div class="font-medium">Supria Sharma</div>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex text-brand-accent mb-6">
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                        </div>
+                        <p class="italic text-lg mb-8 leading-relaxed">"I was suffering from lower back pain due to stenosis. Dr Vipul diagnosed it well and put me on Physio sessions. Now I am feeling much better."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent font-bold">P</div>
+                        <div class="font-medium">Pradeep Kumar Gupta</div>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex text-brand-accent mb-6">
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                        </div>
+                        <p class="italic text-lg mb-8 leading-relaxed">"The staff deputed in his clinic is very cooperative and professional. Highly recommended for any physiotherapy needs."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent font-bold">M</div>
+                        <div class="font-medium">Madhu Chauhan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-serif text-brand-primary mb-8">Visit Our Clinic</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary shrink-0">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Address</h4>
+                                <p class="text-slate-600">
+                                    1st Evergreen House, Near Hotel Ashiana clarks Inn New road, <br />
+                                    Circular Rd, Chotta Shimla, Shimla, Himachal Pradesh 171002
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary shrink-0">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Phone</h4>
+                                <a href="tel:09882411110" class="text-slate-600 hover:text-brand-accent transition-colors">098824 11110</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary shrink-0">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Clinic Hours</h4>
+                                <p class="text-slate-600">
+                                    Mon - Sat: 9:30 AM - 6:30 PM <br />
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 p-8 rounded-3xl bg-brand-accent/10 border border-brand-accent/20">
+                        <h4 class="font-bold text-brand-primary mb-2">Ready to start?</h4>
+                        <p class="text-sm text-slate-600 mb-6">Book your consultation today and take the first step towards recovery.</p>
+                        <a href="tel:09882411110" class="w-full bg-brand-primary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-brand-primary/90 transition-colors">
+                            <i data-lucide="calendar"></i> Call to Schedule
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
+                    <div class="w-full h-full bg-slate-200 relative flex items-center justify-center">
+                        <img src="https://picsum.photos/seed/map/1000/1000" alt="Map Location" class="w-full h-full object-cover opacity-50">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+                            <i data-lucide="map-pin" class="w-12 h-12 text-brand-primary mb-4"></i>
+                            <h3 class="text-2xl font-serif text-brand-primary mb-2">Find Us in Chotta Shimla</h3>
+                            <p class="text-slate-600 mb-6">Near Hotel Ashiana Clarks Inn</p>
+                            <a href="https://share.google/LmnKVsgUwokYbLQ9N" target="_blank" rel="noopener noreferrer" class="bg-white text-brand-primary px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition-transform">
+                                Open in Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-brand-primary/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white">
+                    <i data-lucide="heart-pulse"></i>
+                </div>
+                <span class="font-serif text-lg font-bold text-brand-primary">Care To Cure</span>
+            </div>
+            
+            <div class="text-sm text-slate-400">
+                © <span id="year"></span> Care To Cure Health Care Clinics. All rights reserved.
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="https://facebook.com" class="w-10 h-10 rounded-full bg-brand-primary/5 flex items-center justify-center text-brand-primary hover:bg-brand-primary hover:text-white transition-all">
+                    <i data-lucide="facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
